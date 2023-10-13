@@ -8,6 +8,7 @@ import Webgiviewer from "./components/Webgiviewer";
 function App() {
 
   const webgiViewerRef = useRef();
+  const contentRef = useRef()
 
   const handlePreview = () => {
     webgiViewerRef.current.triggerPreview();
@@ -15,11 +16,13 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <Jumbotron />
-      <SoundSection />
-      <DisplaySection triggerPreview={handlePreview} />
-      <Webgiviewer ref={webgiViewerRef} />
+      <div ref={contentRef} id="content" className="">
+        <Nav />
+        <Jumbotron />
+        <SoundSection />
+        <DisplaySection triggerPreview={handlePreview} />
+      </div>
+      <Webgiviewer contentRef={contentRef} ref={webgiViewerRef} />
     </div>
   );
 }
