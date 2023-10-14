@@ -9,10 +9,10 @@ export default function Nav() {
             <div className="nav-content">
                 <ul className="list-styled">
                     <li><img src={Logo} alt="Apple" /></li>
-                    <li className=""><a href="" className="link-styled">Store</a></li>
+                    <li className=""><a href="" className="link-styled ">Store</a></li>
+                    <li className=""><a href="" className="link-styled">Mac</a></li>
                     <li className=""><a href="" className="link-styled">iPad</a></li>
                     <li className=""><a href="" className="link-styled">iPhone</a></li>
-                    <li className=""><a href="" className="link-styled">Mac</a></li>
                     <li className=""><a href="" className="link-styled">Watch</a></li>
                     <li className=""><a href="" className="link-styled">AirPods</a></li>
                     <li className=""><a href="" className="link-styled">Tv & Home</a></li>

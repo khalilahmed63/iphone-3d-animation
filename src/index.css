@@ -173,6 +173,7 @@ nav .list-styled {
 }
 
 nav .link-styled {
+  text-decoration: none;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: -0.01em;
